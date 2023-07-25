@@ -58,7 +58,7 @@ def main():
     menu = ["Home", "Business User", "Technical User"]
     choice = st.sidebar.selectbox("Select your role", menu)
     st.sidebar.markdown("----")
-    model = st.sidebar.radio('Pick a model version', ('gpt-3.5-turbo', 'gpt-4', 'PaLM2 (available soon)'))
+    model = st.sidebar.radio('Pick a model version', ('gpt-3.5-turbo-16k', 'gpt-4', 'PaLM2 (available soon)'))
     st.sidebar.markdown("----")
     uploaded_files = st.sidebar.file_uploader("Select data product", accept_multiple_files=True)
 
